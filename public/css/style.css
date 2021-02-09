@@ -1,0 +1,58 @@
+.body{
+    background-color: rgb(241, 235, 235);
+
+}
+.contenido{
+margin: 10px 0px 4px 0px;
+}
+.contenido1{
+/* display: flex;
+justify-content: center;
+align-items: center; */
+display: block;
+
+margin: auto;
+margin-top: 20px;
+width: 400px;
+height: 300px;
+}
+.h1
+{
+    text-align: center;
+}
+.texto1{
+width: 100vw;
+padding: 10px 80px;
+background-color: rgb(255, 0, 0);
+
+}
+.texto{
+    width: 100vw;
+    padding: 10px 80px;
+
+    margin: 0px 100px;
+    }
+.w-10{
+    width: 30px;
+}
+.centrado{
+
+  margin-left: 80px;
+}
+.proyectos{
+    margin-top: 40px;
+}
+.p
+{
+    font-size: 20px;
+}
+.titulo{
+    color: cyan;
+    width: 100px;
+    height: auto;
+    background: darkgoldenrod;
+}
+.contenido{
+    
+    color: dimgrey;
+}
