@@ -7,12 +7,14 @@ use App\Http\Requests\DirectorRequest;
 
 class DirectoresController extends Controller
 {
-    public function create(){
+    public function create()
+    {
         return view('contacto-uno');
     }
-    public function store(DirectorRequest $datos){
-/* return "nombre:  ".$datos->input('nombre')." "."Apellido: ".$datos->input('apellidos')." "."Correo: ".$datos->input('correo')." "."Asunto: ".$datos->input('asunto')." "."Achivos: ".$datos->input('archivo'); */
-return view('contacto-uno');
+    public function store(DirectorRequest $datos)
+    {
+        /* return "nombre:  ".$datos->input('nombre')." "."Apellido: ".$datos->input('apellidos')." "."Correo: ".$datos->input('correo')." "."Asunto: ".$datos->input('asunto')." "."Achivos: ".$datos->input('archivo'); */
+        $datos->foto->store(config('archivos.path'), 'public');
+        return view('inicio');
     }
-
 }

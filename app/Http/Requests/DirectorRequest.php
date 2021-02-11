@@ -28,11 +28,11 @@ class DirectorRequest extends FormRequest
     {
         //paso dos validaciones,baile permite verificar que almenos una de las reglas se cumplan, requiered es para obligar que se escriba si o si, alpha es solo para texto, email para correo electronico
         return [
-            'nombre'=>'bail|required|between:3,30|alpha',
-            'apellidos'=>'bail|required|between:3,30|alpha',
+            'nombre'=>'bail|required|between:3,30',
+            'apellidos'=>'bail|required|between:3,30',
             'email'=>'bail|required|between:3,30|email',
-            'asunto'=>'bail|required|between:0,30|alpha',
-            'archivo'=>'required|image'
+            'asunto'=>'bail|required|between:0,30',
+            'foto'=>'required|image'
 
         ];
     }

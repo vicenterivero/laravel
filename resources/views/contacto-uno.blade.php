@@ -32,7 +32,7 @@ Contacto
               <div class="col-sm-10">
                 <input type="email"  name="email" @error('email')
 
-                @enderror class="form-control" id="inputEmail3" >
+                @enderror class="form-control" id="inputEmail3" value="{{old('email')}}">
                 @error('email')
                 <h5>{{$message}}</h5>
                 @enderror
@@ -41,7 +41,7 @@ Contacto
             <div class="row mb-3">
               <label for="inputPassword3" class="col-sm-2 col-form-label">Asunto</label>
               <div class="col-sm-10">
-                <input type="text" name="asunto" @error('asunto') is-valid @enderror class="form-control" id="inputPassword3">
+                <input type="text" name="asunto" @error('asunto') is-valid @enderror class="form-control" id="inputPassword3" value="{{old('asunto')}}">
                 @error('asunto')
                 <h5>{{$message}}</h5>
                 @enderror
@@ -50,8 +50,8 @@ Contacto
             <div class="row mb-3">
                 <label for="inputPassword3" class="col-sm-2 col-form-label">Archivo</label>
                 <div class="col-sm-10">
-                  <input type="file" name="archivo" @error('archivo')@enderror class="form-control" id="inputPassword3">
-                  @error('archivo')
+                  <input type="file" name="foto" @error('foto')@enderror class="form-control" id="inputPassword3" value="{{old('foto')}}">
+                  @error('foto')
                   <h5>{{$message}}</h5>
                   @enderror
                 </div>
