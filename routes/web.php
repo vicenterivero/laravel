@@ -64,3 +64,6 @@ Route::get('/profesores/{clave}',[ProfesoresController::class,'index'] )->name('
 Route::get('contacto', [DirectoresController::class,'create']);
 //PROCESAR RUTA DEL POST
 Route::post('contacto',[DirectoresController::class,'store']);
+//la ruta tiene que ser la misma que le pasamos por el post
+
+
